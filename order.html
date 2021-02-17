@@ -32,10 +32,10 @@
 
         <h2>Order Form</h2>
         <form>
-            <div>
-                <label>Input your name here:</label>
-                <input type="text" name="name">
-            </div>
+            <section>
+                <label for="input-name">Input your name here:</label>
+                <input type="text" name="name", id="input-name">
+            </section>
             <div>
                 <label>Who are we sending this to?</label>
                 <input type="text" name="recipient">
@@ -48,15 +48,15 @@
                     <option value="Honeydew">Honeydew</option>
                 </select>
             </div>
-            <div>
-                <label>When should we deliver?</label>
+            <fieldset>
+                <legend>When should we deliver?</legend>
                 <input type="radio" name="time" value="am">
                 <label>Morning</label>
                 <input type="radio" name="time" value="pm">
                 <label>Evening</label>
                 <input type="radio" name="time" value="any">
                 <label>Any time</label>
-            </div>
+            </fieldset>
             <div>
                 <label>Enter your message:</label>
                 <textarea name ="message"></textarea>
